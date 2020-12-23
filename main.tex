@@ -1,0 +1,103 @@
+\documentclass[lowerhead,12pt]{aesthetic}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{varioref}
+\usepackage[nameinlink]{cleveref}
+
+\title{packages and classes container}
+\author{matthew andrews}
+\date{november 2020}
+
+\begin{document}
+\frontmatter
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\contents
+
+\mainmatter
+\part{classes}
+\chapter{aesthetic}
+\section{quick facts}
+\begin{description}
+    \item[file] \texttt{aesthetic.cls}
+    \item[description] a memoir based class for providing the quick style i prefer
+    \item[dependencies] none, can be fragile regarding styling/fonts/etc
+    \item[requires] \begin{description}[font=\normalfont\scshape\ttfamily]
+        \item[Alegreya] optional --- see \vref{sec:aesop}
+        \item[atbegshi] allows for appendix command --- see \vref{sec:macro}
+        \item[array] needed for the \texttt{M} column type\footnote{i believe this is called by \texttt{memoir} anyway, but i have no interesting breaking things/any dependencies}
+        \item[microtype] no current way to pass options, and i don't intend on adding one. the point is to make documents look nice as painlessly as possible
+        \item[pifont] needed for fancy breaks
+    \end{description}
+    \item[loads] {\scshape\ttfamily memoir} --- options cannot be overridden and are \begin{description}[font=\ttfamily]
+        \item[openany] only has a super noticable effect if \texttt{pagebreaks} or \texttt{partpages} is called (\vref{sec:aesop})
+        \item[twoside] this is designed for book like classes, and the headings will break if you call oneside
+        \item[fullptlayout] just helps typesetting, especially since we call {\scshape\ttfamily microtype}\footnote{i'm honestly not 100\% sure this makes a difference, but i'm not turning it off}
+        \item[extrafontsizes] so you can call all of the large text sizes you want
+        \item[[user options{]}] whatever you want. \texttt{twocolumn} is disabled (will break the page layout, and two column documents are plenty compact. this is to help with the tightness of one column documents, because presumably you want decent readability without using too much paper.)
+    \end{description}
+    \item[example] this file (using \texttt{lowerhead}, \texttt{12pt})
+    \item[last updated] november 23 , 2020
+\end{description}
+
+\section{class options}\label{sec:aesop}
+\begin{description}[font=\ttfamily]
+    \item[lowerhead] formats head in small caps/lowercase, vs all caps. not recommended for part headings.\footnote{there is currently no way to change this within the document. i have no plans of changing this.}
+    \item[numberedhead] adds numbers to headings\footnotemark[\thefootnote]
+    \item[otherfont] allows a font other than Alegreya to be called. if you call this, Alegreya just isn't loaded, so if you want to use Alegreya for headers/what have you, call the font and change it manually.
+    \item[pagebreaks] adds pagebreaks/supresses the commands which condense the document. this does \emph{not} reformat part parges
+    \item[partheadings] changes headings from being labeled as chapter \& section to part \& chapter\footnotemark[\thefootnote]
+    \item[partpages] allows parts to be formatted on their own page, while maintaining the fancy breaks. if enabled with \texttt{pagebreaks}, will provide the package partpage formatting
+    \item[shortnames] turns off the automatic full part/chapter names in the header. unless \texttt{numberedhead} is called, this has no effect.
+\end{description}
+
+\section{related/recommended}
+\begin{description}[font=\normalfont\scshape\ttfamily]
+    \item[afterpage] helps with float and table typesetting
+    \item[booktabs] the aesthetics of this make heavy use of horizontal rules, so you'll probably want to have the nicer looking tables anyway
+    \item[csquotes] i think either {\scshape\ttfamily babel} or {\scshape\ttfamily memoir} calls this, and it'll make your life a bit easier
+    \item[xcolor] colors are nice, they jive well, and if you want to mess with some of the {\scshape\ttfamily memoir} opptions, now you can.
+    \item[xtab] helps with longer tables. you can use {\scshape\ttfamily longtable} if that's your preference, but if i ever write up some of my other common commands as classes/packages, i'll write them for {\scshape\ttfamily xtab}
+\end{description}
+
+\section{macros}\label{sec:macro}
+\begin{description}[font=\ttfamily]
+    \item[\textbackslash contents] calls the standard set of contents (short contents, full contents, list of figures, list of tables). adds a part for contents, but does not enter or exist \verb|\frontmatter| so you can add contents under. not very flexible.
+    \item[M\{<width>\}] a horizontally/vertically centered column.
+    \item[\textbackslash makeappendix] prints out a formmatted appendix. see the end of this document.
+    \item[\textbackslash makebackmatter{[]}] prints out the command to enter backmatter without forcing a page break. optional argument typesets a file/text between the switch command and the transition spacer.
+\end{description}
+
+\section{known issues}
+\begin{description}
+    \item[{\scshape\ttfamily afterpage} breaking] yeah this isn't really a class problem \emph{however} i bring it up here because it does happen, where you get fucked over because {\scshape\ttfamily afterpage} doesn't know what it's doing. just make sure you've added lots of text.
+    \item[calling footnotes in sections] something about the formmatting commands for the sections breaks footnotes\footnote{because of the commands that format them, sections are actually pretty fragile. there isn't a consistent and easy workaround.}. you can't use \verb|\protect\footnote{}| because it will incorrectly format the font of the footnote. instead, use \verb|\protect\footnotemark}\footnotetext{}|. this does not happen for chapters.
+    \item[failure to break pages] you may have used \verb|\let\par\russianpar|. bad idea. it will mess with the commands used to control chapters. this doesn't always cause problems (especially if you have longer chapters), but i don't recommend messing with it.
+    \item[weird looking tables] explained in \vref{sec:aesinfo}. basically, you should not call flexible width tables in this, and instead, use \texttt{M}
+\end{description}
+
+\section{possible additions/plans}
+\begin{description}
+    \item[footnote toggles] turning where footnotes are numbered into an option, as well as adding easier per page symbolic footnotes.
+    \item[upper/lower options] so that for the $\sim$aesthetic$\sim$ all lowercase documents can also have easy tables of contents, etc.
+\end{description}
+
+\section[class information]{class information\protect\footnotemark}\footnotetext{not recommended, but i am a completionist in all things}\label{sec:aesinfo}
+\begin{description}
+    \item[class options] pretty much all of the class options just create conditionals in the form \verb|\@option<boolean>| which can be used with \verb|\makeatletter| and \verb|\makeatother|\footnote{i'm not sure if this would actually work, however, because none of the class options have anything to do with the document once you've started the document, they're all called on start up. i guess this could change in the future?}.
+    \item[headings] we use a modified version of the \texttt{ruled} style which gives us some flexibility in the marks. this bit of the file is more verbose than needed, but if you want to mess with the headings, you can mess with the \texttt{ruled} style
+    \item[parts and chapters] basically just heavy use of \verb|\renewcommand{}{}| over breaks, skips, fonts, etc., to get it all consistent.
+    \item[tabcolsep] set to \texttt{0pt}, so make sure you consider that. this is, as far as i'm concerned, a positive for typesetting tables because it lets you actually use textwidth based ratios for setting tables.
+    \item[footnotes] numbered consecutively though the whole document. could easily be changed in the preamble, but i don't recommend doing that unless you're using \texttt{pagebreaks}, because it can create weirdness like two footnotes of the same number on the same page in edge cases.
+    \item[contents] just calls the contents in the predictable/defined way.
+    \item[appendix] calls a few commands to add everything to the table of contents without being a pain
+    \item[backmatter] uses {\scshape\ttfamily atbegshi} to turn \texttt{\textbackslash @mainmatterfalse} on after the page finishes\footnote{for grouping reasons, \texttt{\textbackslash afterpage} doesn't wrok here, and the work around basically becomes comes just using what {\scshape\ttfamily atbegshi} does.}, and then after the optional argument, adds a page separator
+\end{description}
+
+\makeappendix
+\makebackmatter
+\end{document}
