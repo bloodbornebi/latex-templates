@@ -5,6 +5,9 @@
 \usepackage{hyperref}
 \usepackage{varioref}
 \usepackage[nameinlink]{cleveref}
+\usepackage[xindy]{imakeidx}
+
+\makeindex
 
 \title{packages and classes container}
 \author{matthew andrews}
@@ -96,6 +99,23 @@
     \item[contents] just calls the contents in the predictable/defined way.
     \item[appendix] calls a few commands to add everything to the table of contents without being a pain
     \item[backmatter] uses {\scshape\ttfamily atbegshi} to turn \texttt{\textbackslash @mainmatterfalse} on after the page finishes\footnote{for grouping reasons, \texttt{\textbackslash afterpage} doesn't wrok here, and the work around basically becomes comes just using what {\scshape\ttfamily atbegshi} does.}, and then after the optional argument, adds a page separator
+\end{description}
+
+\chapter{notes}
+\section{quick facts}
+\begin{description}
+  \item[file] \texttt{notes.cls}
+  \item[description] an extension of {\scshape\ttfamily aesthetic.cls} which provides a variety of tools for notes
+  \item[dependencies] {\scshape\ttfamily aesthetic} class is required
+  \item[requires]  \begin{description}
+      \item[general] \begin{description}[font=\normalfont\scshape\ttfamily]
+          \item[xcolor] required to manage the themes, etc.
+          \item[tcolorbox] used in effectively every course type to provide functionality
+          \item[float] provides a variety of useful features
+          \item[caption] allows for more flexible caption positioning/placement, necessary for various functions
+          \item[tikz] commonly used in notes, included here for ease. also, it's required in a variety of places, so requiring it early prevents dependency issues.
+        \end{description}
+    \end{description}
 \end{description}
 
 \makeappendix
