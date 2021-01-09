@@ -6,12 +6,19 @@
 \usepackage{varioref}
 \usepackage[nameinlink]{cleveref}
 \usepackage[xindy]{imakeidx}
+\usepackage{xcolor}
+\usepackage{pdflscape}
+\usepackage[chapter]{minted}
+\usemintedstyle{bw}
 
 \makeindex
 
 \title{packages and classes container}
 \author{matthew andrews}
 \date{november 2020}
+
+\setsecnumdepth{subparagraph}
+\maxsecnumdepth{subparagraph}
 
 \begin{document}
 \frontmatter
@@ -20,6 +27,7 @@
 \clearpage
 
 \contents
+\listoflistings
 
 \mainmatter
 \part{classes}
@@ -106,7 +114,10 @@
 \begin{description}
   \item[file] \texttt{notes.cls}
   \item[description] an extension of {\scshape\ttfamily aesthetic.cls} which provides a variety of tools for notes
-  \item[dependencies] {\scshape\ttfamily aesthetic} class is required
+  \item[dependencies] \begin{itemize}
+      \item {\scshape\ttfamily aesthetic} class is required
+      \item if using class option \texttt{cse} (\vref{sec:notesop}), {\scshape\ttfamily minted} must be configured. in order for this to work correctly, the color schemes for \texttt{solarized}, \texttt{nord}, etc., must be loaded in under the correct names. this is fully described under \nameref{sec:notesop} (\vref{sec:notesop}).
+    \end{itemize}
   \item[requires]  \begin{description}
       \item[general] \begin{description}[font=\normalfont\scshape\ttfamily]
           \item[xcolor] required to manage the themes, etc.
@@ -114,8 +125,136 @@
           \item[float] provides a variety of useful features
           \item[caption] allows for more flexible caption positioning/placement, necessary for various functions
           \item[tikz] commonly used in notes, included here for ease. also, it's required in a variety of places, so requiring it early prevents dependency issues.
+          \item[hyperref, varioref, cleveref] provides effective refrencing and linking. hyperref also allows link color to be set to match the document color scheme
+        \end{description}
+      \item[anth] \begin{description}[font=\normalfont\scshape\ttfamily]
+          \item[biocon] provides support for species names
+        \end{description}
+      \item[chem] \begin{description}[font=\normalfont\scshape\ttfamily]
+          \item[chemfig] draws chemical figures
+          \item[mhchem] (version 4) better inline chemistry figures
+          \item[amsmath, amssymb, amsthm] provides common math support, etc.
+          \item[thmtools] provides tools for reaction mechanism environment
+        \end{description}
+      \item[cse] \begin{description}[font=\normalfont\scshape\ttfamily]
+          \item[minted] provides listing support. color themes are automatically loaded to match document theme.\footnote{if using \texttt{printed} class option (\vref{sec:notesop}), \texttt{bw} is automatically loaded. color schemes without minted support (presently, \texttt{ashes}) have themes that are mostly matching chosen.}
+        \end{description}
+      \item[math] \begin{description}[font=\normalfont\scshape\ttfamily]
+          \item[amsmath, amssymb, amsthm] provide common/basic math support
+          \item[thmtools] provides better theorem environments (necessary to provide boxed theorems)
+          \item[physics] provides helpful math commands
+          \item[jkmath] provides similar functionality to {\scshape\ttfamily physics}\footnote{both are loaded because of document compatibility and because physics provides a few things that jkmath doesn't.}
+        \end{description}
+      \item[ling] \begin{description}[font=\normalfont\scshape\ttfamily]
+          \item[tipa] basic ipa support
+          \item[tipx] extended ipa support
+          \item[gb4e] glossing
+          \item[forest] a package for creating tikz trees easier/more effectively\footnote{the tikz library trees is also loaded, but forest provides better linguistics functionality and is generally much easier to use}
         \end{description}
     \end{description}
+    \item[example] not presently loaded
+    \item[last updated] december 27, 2020
+\end{description}
+
+\section{class options}\label{sec:notesop}
+\begin{description}[font=\ttfamily]
+  \item[dark] loads a dark version of a theme (or, in a black and white color scheme, simply provides white on black)
+  \item[printable] \begin{table}
+      \centerfloat
+      \begin{tabular}{M{.25\textwidth}M{.4\textwidth}M{.35\textwidth}}
+        \toprule
+        component & standard & change \\
+        \midrule
+        font size & 14pt & 10pt \\
+        dark & changes document to dark & negated \\
+        page color & light/dark color & white \\
+        background color & darker/lighter color & white \\
+        {\scshape\ttfamily minted} scheme & matches color scheme & \texttt{bw} \\
+        links & colored (prints) & colored boxes (doesn't print) \\
+        \bottomrule
+      \end{tabular}
+      \caption{changes made in printable}
+      \label{tab:printable}
+    \end{table}
+    implements the changes listed in \vref{tab:printable}
+  \item[ashes, espresso, nord, solarized, tomorrow] \begin{landscape}\begin{table}
+      \centerfloat
+      \begin{tabular}{M{.1\linewidth}M{.1\linewidth}M{.05\linewidth}M{.1\linewidth}M{.1\linewidth}M{.1\linewidth}M{.1\linewidth}M{.1\linewidth}M{.1\linewidth}M{.1\linewidth}M{.05\linewidth}}
+        \toprule
+        scheme & text & page & back\-ground & subtle text & accent & accent text& se\-con\-dary ac\-c\-ent & se\-con\-dary ac\-c\-ent text & ter\-ti\-a\-ry ac\-c\-ent & fourth \\
+        \midrule
+        ash\-es (light) & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & \colorbox[HTML]{f3f3f5}{light} & \colorbox[HTML]{f3f3f5}{light} & {\color{white} \colorbox[HTML]{747a84}{mid}} & {\color{white} \colorbox[HTML]{ac95c7}{a1}} & \colorbox[HTML]{f3f3f5}{light} & {\color{white} \colorbox[HTML]{95acc7}{b2}} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & \colorbox[HTML]{c7ac95}{a0} & \colorbox[HTML]{acc795}{b1} \\
+        ashes (dark) & \colorbox[HTML]{f3f3f5}{light} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & {\color{white} \colorbox[HTML]{747a84}{mid}} & {\color{white} \colorbox[HTML]{ac95c7}{a1}} & \colorbox[HTML]{f3f3f5}{light} & {\color{white} \colorbox[HTML]{95acc7}{b2}} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & \colorbox[HTML]{c7ac95}{a0} & \colorbox[HTML]{acc795}{b1} \\
+        es\-pre\-sso (light) & {\color{white} \colorbox[HTML]{323232}{dark0}} & \colorbox{white}{light1} & \colorbox[HTML]{eeeeec}{light0} & {\color{white} \colorbox[HTML]{353535}{dark1}} & {\color{white} \colorbox[HTML]{d25252}{a0}} & \colorbox{white}{light1} & \colorbox[HTML]{6c99bb}{b0} & {\color{white} \colorbox[HTML]{353535}{dark1}} & \colorbox[HTML]{c2e075}{a4} & \\
+        es\-pre\-sso (dark) & \colorbox[HTML]{eeeeec}{light0} & {\color{white} \colorbox[HTML]{323232}{dark0}} & {\color{white} \colorbox[HTML]{353535}{dark1}} & \colorbox[HTML]{eeeeec}{light0} & {\color{white} \colorbox[HTML]{d25252}{a0}} & {\color{white} \colorbox[HTML]{323232}{dark0}} & \colorbox[HTML]{6c99bb}{b0} & {\color{white} \colorbox[HTML]{353535}{dark1}} & \colorbox[HTML]{c2e075}{a4} & \\
+        nord (light) & {\color{white} \colorbox[HTML]{2E3440}{nord0}} & \colorbox[HTML]{ECEFF4}{nord6} & \colorbox[HTML]{E5E9F0}{nord5} & {\color{white} \colorbox[HTML]{3B4252}{nord1}} & \colorbox[HTML]{81A1C1}{nord9} & \colorbox[HTML]{eceff3}{nord6} & \colorbox[HTML]{A3BE8C}{nord14} & \colorbox[HTML]{e5e9f0}{nord5} & \colorbox[HTML]{5E81AC}{nord10} & \\
+        nord (dark) & \colorbox[HTML]{ECEFF4}{nord6} & {\color{white} \colorbox[HTML]{2E3440}{nord0}} & {\color{white} \colorbox[HTML]{3B4252}{nord1}} & &  \colorbox[HTML]{81A1C1}{nord9} & \colorbox[HTML]{eceff3}{nord6} & \colorbox[HTML]{A3BE8C}{nord14} & \colorbox[HTML]{e5e9f0}{nord5} & \colorbox[HTML]{5E81AC}{nord10} & \\
+        so\-l\-ar\-iz\-ed (light) & {\color{white} \colorbox[HTML]{002b36}{base03}} & \colorbox[HTML]{fdf6e3}{base3} & \colorbox[HTML]{eee8d5}{base2} & {\color{white} \colorbox[HTML]{073642}{base02}} & \colorbox[HTML]{b58900}{yellow} & \colorbox[HTML]{fdf6e2}{base3} & \colorbox[HTML]{268bd2}{blue} & \colorbox[HTML]{eee8d5}{base2} & \colorbox[HTML]{dc322f}{red} & \\
+        so\-l\-ar\-iz\-ed (dark) & \colorbox[HTML]{fdf6e3}{base3} & {\color{white} \colorbox[HTML]{002b36}{base03}} & {\color{white} \colorbox[HTML]{073642}{base02}} & \colorbox[HTML]{eee8d5}{base2} & \colorbox[HTML]{b58900}{yellow} & {\color{white} \colorbox[HTML]{002b3b}{base03}} & \colorbox[HTML]{268bd2}{blue} & {\color{white} \colorbox[HTML]{073642}{base02}} & \colorbox[HTML]{dc322f}{red} & \\
+        to\-mor\-row (light) & {\color{white} \colorbox[HTML]{1d1f21}{dark0}} & \colorbox[HTML]{ffffff}{light3} & & & \colorbox[HTML]{cc6666}{a0} & & & & & \\
+        to\-mor\-row (dark) & \colorbox[HTML]{ffffff}{light3} & {\color{white} \colorbox[HTML]{1d1f21}{dark0}} & & & \colorbox[HTML]{cc6666}{a0} & & & & & \\
+        \bottomrule
+      \end{tabular}
+      \caption[color schemes]{color schemes. note that most color schemes have 10 to 16 colors, but only 5 or so are used.}
+      \label{tab:colorschemes}
+    \end{table}
+  \end{landscape}
+  document color schemes. see \vref{tab:colorschemes}. note that these are mutually exclusive and will be ordered alphabetically (e.g., if you include both \texttt{solarized} and \texttt{nord}, solarized will be displayed, but if you include \texttt{espresso} and \texttt{nord}, nord will be displayed).
+
+  \item[anth, chem, cse, ling, math] course types. differences are discussed in relevant sections, but mostly pertains to which packages are loaded and which macros are created. these are not exclusive, but certain macros may behave unpredictably.
+\end{description}
+
+\section{related/recommended}
+this strives to be relatively self-contained, so only packages required for personal needs must be loaded.
+
+\section{macros}
+\subsection{general}
+\begin{description}[font=\ttfamily]
+  \item[flashcard\footnotemark]\footnotetext{not technically a macro} a way of maintaining blocks that may be desired for flashcards. should not be directly used.
+
+  \item[vocab] environment. takes one mandatory argument (vocabulary word), and the contents are placed in a box.
+
+  \item[startgen] prints a title page and contents. title information must be set in preamble. takes one optional argument, which will be placed at the end of the contents. always usable, but there are better content/title page options listed in \vref{subsec:chem,subsec:cse}.
+\end{description}
+
+\subsection{chemistry}\label{subsec:chem}
+\begin{description}[font=\ttfamily]
+  \item[mechanism] a float type with provides reaction mechanism support. not recommended for direct use.
+
+  \item[mech] an environment which takes one argument (title) and boxes a reaction mechanism.
+
+  \item[start] chemistry's implementation of start adds a list of reaction mechanisms. it also takes an optional argument.
+\end{description}
+
+\subsection{computer science}\label{subsec:cse}
+\begin{description}[font=\ttfamily]
+  \item[code] a listing template. takes one argument, the title of the box.
+
+  \item[start] computer science's implementation of start includes a list of flashcards and a list of listings.
+\end{description}
+
+\subsection{math}
+\begin{description}[font=\ttfamily]
+  \item[theorem, axiom, definition] theorem types defined. not recommended for direct usage because they're formatted very precisely to allow for the boxed variants to function in a predictable way.
+
+  \item[boxtap] an environment for theorems, axioms, and postulates\footnote{i just didn't like boxtad as an acronym }. can be used directly, but not recommended. takes two arguments: the first identifies which box style to use, and the second is the title. if you need custom theorems, better to use this in another theorem definition than directly.
+  \begin{listing}
+    \begin{minted}[breaklines]{TeX}
+\tcbset{theorem/.style={boxtap, colframe=secondaryaccentcolor, colbacktitle=secondaryaccentcolor}}
+\declaretheorem[style=boxedtheorem]{theorem}
+\NewDocumentEnvironment{ boxthm }{ m m +b }{ \begin{boxtap}{theorem}{\Cref{#2} (\nameref{#2})}\begin{theorem}[name={#1},label=#2] #3 \end{theorem}\end{boxtap} }{}
+    \end{minted}
+    \caption[example of \texttt{boxtap} implementation]{example implementation of \texttt{boxtap}. note that \texttt{boxtap} and \texttt{boxedtheorem} are created within the class, you can use these freely.}
+    \label{lst:boxtap}
+  \end{listing}
+  see \vref{lst:boxtap} for an example of how to do this.
+
+  \item[boxthm, boxaxm, boxdef] default variants of \texttt{boxtap}. all have unique colors. see \vref{lst:boxtap} for most of \texttt{boxthm}'s application.
+\end{description}
+
+\subsection{linguistics}
+\begin{description}[font=\ttfamily]
+  \item[tree] a document environment for syntax trees. takes one argument, the caption, and places body directly into a tree within a floating environment.
 \end{description}
 
 \makeappendix

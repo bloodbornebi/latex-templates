@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.7)  24 DEC 2020 02:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.7)  9 JAN 2021 11:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -707,56 +707,222 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \colbreak@box=\box98
 \mc@col@check@num=\count319
 ))
-\main@idxfile=\write4
-\openout4 = `main.idx'.
+(c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+))
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(c:/texlive/2020/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(c:/texlive/2020/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count320
+)
+(c:/texlive/2020/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count321
+\FV@InFile=\read3
+\FV@TabBox=\box99
+\c@FancyVerbLine=\count322
+\FV@StepNumber=\count323
+\FV@OutFile=\write4
+)
+(c:/texlive/2020/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(c:/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count324
+\output=\toks31
+\linenoprevgraf=\count325
+\linenumbersep=\dimen194
+\linenumberwidth=\dimen195
+\c@linenumber=\count326
+\c@pagewiselinenumber=\count327
+\c@LN@truepage=\count328
+\c@internallinenumber=\count329
+\c@internallinenumbers=\count330
+\quotelinenumbersep=\dimen196
+\bframerule=\dimen197
+\bframesep=\dimen198
+\bframebox=\box100
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count331
+\c@FV@TrueTabCounter=\count332
+\FV@TabBox@Group=\box101
+\FV@TmpLength=\skip196
+\c@FV@HighlightLinesStart=\count333
+\c@FV@HighlightLinesStop=\count334
+\FV@LoopCount=\count335
+\FV@NCharsBox=\box102
+\FV@BreakIndent=\dimen199
+\FV@BreakIndentNChars=\count336
+\FV@BreakSymbolSepLeft=\dimen256
+\FV@BreakSymbolSepLeftNChars=\count337
+\FV@BreakSymbolSepRight=\dimen257
+\FV@BreakSymbolSepRightNChars=\count338
+\FV@BreakSymbolIndentLeft=\dimen258
+\FV@BreakSymbolIndentLeftNChars=\count339
+\FV@BreakSymbolIndentRight=\dimen259
+\FV@BreakSymbolIndentRightNChars=\count340
+\c@FancyVerbLineBreakLast=\count341
+\FV@LineBox=\box103
+\FV@LineIndentBox=\box104
+\FV@LineWidth=\dimen260
+)
+(c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count342
+\calc@Bcount=\count343
+\calc@Adimen=\dimen261
+\calc@Bdimen=\dimen262
+\calc@Askip=\skip197
+\calc@Bskip=\skip198
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count344
+\calc@Cskip=\skip199
+)
+(c:/texlive/2020/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(c:/texlive/2020/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(c:/texlive/2020/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+))
+(c:/texlive/2020/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2020/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count345
+\decimalpart=\count346
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(c:/texlive/2020/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip256
+\fb@frw=\dimen263
+\fb@frh=\dimen264
+)
+(c:/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count347
+\float@exts=\toks32
+\float@box=\box105
+\@float@everytoks=\toks33
+\@floatcapt=\box106
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box107
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count348
+\c@minted@pygmentizecounter=\count349
+\@float@every@listing=\toks34
+\c@listing=\count350
+)
+runsystem(if not exist _minted-main mkdir _minted-main)...executed.
+
+\main@idxfile=\write6
+\openout6 = `main.idx'.
 
 
 Writing index file main.idx
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ma
+in.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
+
+runsystem(del main.aex)...executed.
+
 (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count320
-\l__pdf_internal_box=\box99
+\l__kernel_color_stack_int=\count351
+\l__pdf_internal_box=\box108
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Trying to load font information for T1+Alegreya-LF on input
- line 16.
+ line 23.
  (c:/texlive/2020/texmf-dist/tex/latex/alegreya/T1Alegreya-LF.fd
 File: T1Alegreya-LF.fd 2019/10/08 (autoinst) Font definitions for T1/Alegreya-L
 F.
 )
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <12> not available
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 16.
+t line 23.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
-\c@mv@tabular=\count321
-\c@mv@boldtabular=\count322
-LaTeX Info: Redefining \microtypecontext on input line 16.
+(Font)              scaled to size 12.0pt on input line 23.
+\c@mv@tabular=\count352
+\c@mv@boldtabular=\count353
+LaTeX Info: Redefining \microtypecontext on input line 23.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 16.
+LaTeX Info: Redefining \showhyphens on input line 23.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -764,8 +930,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Alegreya-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\AtBeginShipoutBox=\box100
-Package hyperref Info: Link coloring OFF on input line 16.
+\AtBeginShipoutBox=\box109
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -776,65 +942,89 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count323
+\c@section@level=\count354
 LaTeX Info: Redefining \Ref on input line 520.
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 16.
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 (./main.out) (./main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
-LaTeX Info: Redefining \Ref on input line 16.
+LaTeX Info: Redefining \Ref on input line 23.
+
+(c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count355
+\scratchdimen=\dimen265
+\scratchbox=\box110
+\nofMPsegments=\count356
+\nofMParguments=\count357
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count358
+\MPscratchDim=\dimen266
+\MPnumerator=\count359
+\makeMPintoPDFobject=\count360
+\everyMPtoPDFconversion=\toks36
+) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <20.74> not availab
 le
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 19.
+t line 26.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
+(Font)              scaled to size 20.74pt on input line 26.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <14.4> not availabl
 e
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 19.
+t line 26.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 19.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-9.
- (c:/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
+(Font)              scaled to size 14.4pt on input line 26.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+6.
+
+(c:/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (c:/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-9.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+6.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-19.
+26.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-19.
+26.
 
 (c:/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 19.
+(Font)              <14.4> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 19.
+(Font)              <10> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 19.
+(Font)              <7> on input line 26.
  [1
 
 
@@ -842,21 +1032,21 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/it' in size <12> not available
 
 (Font)              Font shape `T1/Alegreya-LF/regular/it' tried instead on inp
-ut line 22.
+ut line 29.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/it' will be
-(Font)              scaled to size 12.0pt on input line 22.
+(Font)              scaled to size 12.0pt on input line 29.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/it' in size <24.88> not availa
 ble
 (Font)              Font shape `T1/Alegreya-LF/regular/it' tried instead on inp
-ut line 22.
+ut line 29.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/it' will be
-(Font)              scaled to size 24.88pt on input line 22.
+(Font)              scaled to size 24.88pt on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 22.
+(Font)              <12> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 22.
+(Font)              <8> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 22.
+(Font)              <6> on input line 29.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/b/n' in size <14.4> not availabl
 e
@@ -873,59 +1063,60 @@ LaTeX Font Info:    Font shape `T1/Alegreya-LF/bold/n' will be
 
 
 ])
-(./main.lof)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <24.88> not availab
 le
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 23.
+t line 29.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 24.88pt on input line 23.
+(Font)              scaled to size 24.88pt on input line 29.
  [3]
-(./main.lot) [4]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-9.
- (c:/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
+(./main.lof) (./main.lot) (./main.lol
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+.
+
+(c:/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+) [4]
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/sc' in size <12> not available
 
 (Font)              Font shape `T1/Alegreya-LF/regular/sc' tried instead on inp
-ut line 33.
+ut line 41.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/sc' will be
-(Font)              scaled to size 12.0pt on input line 33.
+(Font)              scaled to size 12.0pt on input line 41.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmtt/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <8> not available
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 35.
+t line 43.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 35.
+(Font)              scaled to size 8.0pt on input line 43.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <10> not available
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 35.
+t line 43.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
+(Font)              scaled to size 10.0pt on input line 43.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 35.
+(Font)              <5> on input line 43.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/n' in size <7> not available
 (Font)              Font shape `T1/Alegreya-LF/regular/n' tried instead on inpu
-t line 35.
+t line 43.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 43.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 40.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 48.
  [1
 
 
 ]
-Overfull \hbox (1.05576pt too wide) in paragraph at lines 42--43
+Overfull \hbox (1.05576pt too wide) in paragraph at lines 50--51
 []\T1/Alegreya-LF/regular/n/12 (-20) just helps type-set-ting, es-pe-cially sin
 ce we call \T1/lmtt/m/sc/12 microtype[][][] 
  []
@@ -934,16 +1125,16 @@ ce we call \T1/lmtt/m/sc/12 microtype[][][]
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/b/sc' in size <12> not available
 
 (Font)              Font shape `T1/Alegreya-LF/bold/sc' tried instead on input 
-line 80.
+line 88.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/bold/sc' will be
-(Font)              scaled to size 12.0pt on input line 80.
+(Font)              scaled to size 12.0pt on input line 88.
 
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/sc' undefined
-(Font)              using `T1/lmtt/bx/n' instead on input line 80.
+(Font)              using `T1/lmtt/bx/n' instead on input line 88.
 
 
-Overfull \hbox (1.12576pt too wide) in paragraph at lines 80--81
+Overfull \hbox (1.12576pt too wide) in paragraph at lines 88--89
 \T1/Alegreya-LF/regular/n/12 (-20) here be-cause it does hap-pen, where you get
  fucked over be-cause \T1/lmtt/m/sc/12 afterpage
  []
@@ -952,60 +1143,193 @@ Overfull \hbox (1.12576pt too wide) in paragraph at lines 80--81
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/m/sc' in size <10> not available
 
 (Font)              Font shape `T1/Alegreya-LF/regular/sc' tried instead on inp
-ut line 101.
+ut line 109.
 LaTeX Font Info:    Font shape `T1/Alegreya-LF/regular/sc' will be
-(Font)              scaled to size 10.0pt on input line 101.
+(Font)              scaled to size 10.0pt on input line 109.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmtt/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
- [5] [6] [7
+LaTeX Font Info:    Trying to load font information for TS1+Alegreya-LF on inpu
+t line 118.
+ (c:/texlive/2020/texmf-dist/tex/latex/alegreya/TS1Alegreya-LF.fd
+File: TS1Alegreya-LF.fd 2019/10/08 (autoinst) Font definitions for TS1/Alegreya
+-LF.
+)
+LaTeX Font Info:    Font shape `TS1/Alegreya-LF/m/n' in size <12> not available
+
+(Font)              Font shape `TS1/Alegreya-LF/regular/n' tried instead on inp
+ut line 118.
+LaTeX Font Info:    Font shape `TS1/Alegreya-LF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 118.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Alegreya-LF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+[5]
+Overfull \hbox (9.06105pt too wide) in paragraph at lines 128--129
+[]\T1/Alegreya-LF/regular/n/12 (-20) provides ef-fec-tive re-frenc-ing and
+ []
+
+
+Overfull \hbox (0.83058pt too wide) in paragraph at lines 136--137
+[]\T1/Alegreya-LF/regular/n/12 (-20) provides com-mon math sup-port, etc. 
+ []
+
+[6] [7pdfTeX warning (ext4): destination with the same identifier (name{table.2
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.180 ...d, solarized, tomorrow] \begin{landscape}
+                                                  \begin{table}]
+Overfull \hbox (3.12149pt too wide) in paragraph at lines 184--185
+ []|\T1/Alegreya-LF/regular/n/12 (-20) fourth| 
+ []
+
+
+Overfull \hbox (1.2653pt too wide) in paragraph at lines 186--186
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (1.1693pt too wide) in paragraph at lines 187--187
+ []|[][][][][][][]| 
+ []
+
+
+Overfull \hbox (5.5133pt too wide) in paragraph at lines 188--188
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (7.56529pt too wide) in paragraph at lines 189--189
+ []|[][][][][][][]| 
+ []
+
+
+Overfull \hbox (7.5053pt too wide) in paragraph at lines 190--190
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.4413pt too wide) in paragraph at lines 191--191
+ []|[][][][][][][]| 
+ []
+
+
+Overfull \hbox (5.54932pt too wide) in paragraph at lines 192--192
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (11.94531pt too wide) in paragraph at lines 193--193
+ []|[][][][][][][]| 
+ []
+
+
+Overfull \hbox (6.3533pt too wide) in paragraph at lines 194--194
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (7.56529pt too wide) in paragraph at lines 195--195
+ []|[][][][][][][]| 
+ []
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{table.2.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.201   \end{landscape}
+                       ] [9
+
 
 ]
-\tf@toc=\write6
-\openout6 = `main.toc'.
+\openout4 = `main.pyg'.
 
-\tf@lof=\write7
-\openout7 = `main.lof'.
+runsystem(pygmentize -S default -f latex -P commandprefix=PYG > _minted-main\de
+fault-pyg-prefix.pygstyle)...executed.
 
-\tf@lot=\write8
-\openout8 = `main.lot'.
+ (./_minted-main/default-pyg-prefix.pygstyle)
+runsystem(pygmentize -S bw -f latex -P commandprefix=PYGbw > _minted-main\bw.py
+gstyle)...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
+
+(./_minted-main/bw.pygstyle)
+runsystem(pygmentize -l TeX -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-main/081DF7D86587FEF5D90D4043F74D1AC331DD870A308B974A3B5028136A4784DB.pygte
+x main.pyg)...executed.
+
+
+(./_minted-main/081DF7D86587FEF5D90D4043F74D1AC331DD870A308B974A3B5028136A4784D
+B.pygtex)
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 247.
+
+Underfull \hbox (badness 1533) in paragraph at lines 247--247
+[]\T1/Alegreya-LF/regular/n/12 (+20) Listing 2.1: ex-am-ple im-ple-men-ta-tion 
+of \T1/lmtt/m/n/12 boxtap\T1/Alegreya-LF/regular/n/12 (+20) . note that \T1/lmt
+t/m/n/12 boxtap \T1/Alegreya-LF/regular/n/12 (+20) and
+ []
+
+[10] [11] [12
+
+]
+\tf@toc=\write8
+\openout8 = `main.toc'.
+
+\tf@lof=\write9
+\openout9 = `main.lof'.
+
+\tf@lot=\write10
+\openout10 = `main.lot'.
+
+\tf@lol=\write11
+\openout11 = `main.lol'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0F2383DD58D7B58C5E11A5DE10364AEB;942.
+(rerunfilecheck)             Checksum: 16B3C2190A5EBE0B9A83004319641DA0;1443.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 262.
+runsystem(del main.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 12948 strings out of 480875
- 216321 string characters out of 5911450
- 549455 words of memory out of 5000000
- 28259 multiletter control sequences out of 15000+600000
- 759689 words of font info for 128 fonts, out of 8000000 for 9000
+ 17499 strings out of 480875
+ 299080 string characters out of 5911450
+ 671510 words of memory out of 5000000
+ 32639 multiletter control sequences out of 15000+600000
+ 763397 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,62p,490b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,62p,836b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2020
-/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2020/texmf-dist/fonts/enc/
-dvips/alegreya/algr_dfcgiv.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/aleg
-reya/algr_fbntfe.enc}<c:/texlive/2020/texmf-dist/fonts/type1/huerta/alegreya/Al
-egreya-Bold.pfb><c:/texlive/2020/texmf-dist/fonts/type1/huerta/alegreya/Alegrey
-a-Italic.pfb><c:/texlive/2020/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-R
-egular.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/tex
-live/2020/texmf-dist/fonts/type1/public/lm/lmtcsc10.pfb><c:/texlive/2020/texmf-
-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/p
-ublic/lm/lmtt10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pf
-b><c:/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (11 pages, 287558 bytes).
+/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2020/texmf-dist/fonts/
+enc/dvips/alegreya/algr_nwaz6g.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/
+lm/lm-ec.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/alegreya/algr_dfcgiv.e
+nc}{c:/texlive/2020/texmf-dist/fonts/enc/dvips/alegreya/algr_fbntfe.enc}<c:/tex
+live/2020/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Bold.pfb><c:/texlive/
+2020/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Italic.pfb><c:/texlive/202
+0/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Regular.pfb><c:/texlive/2020/
+texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/ty
+pe1/public/lm/lmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy
+8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtcsc10.pfb><c:/texliv
+e/2020/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2020/texmf-dist/
+fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public
+/lm/lmtt12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (16 pages, 313686 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 17033 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 18121 words of extra memory for PDF output out of 20736 (max. 10000000)
 
