@@ -9,7 +9,7 @@
 \usepackage{xcolor}
 \usepackage{pdflscape}
 \usepackage[chapter]{minted}
-\usemintedstyle{bw}
+\usemintedstyle{solarized-light}
 
 \makeindex
 
@@ -187,8 +187,8 @@
         ashes (dark) & \colorbox[HTML]{f3f3f5}{light} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & {\color{white} \colorbox[HTML]{747a84}{mid}} & {\color{white} \colorbox[HTML]{ac95c7}{a1}} & \colorbox[HTML]{f3f3f5}{light} & {\color{white} \colorbox[HTML]{95acc7}{b2}} & {\color{white} \colorbox[HTML]{1c1e23}{dark}} & \colorbox[HTML]{c7ac95}{a0} & \colorbox[HTML]{acc795}{b1} \\
         es\-pre\-sso (light) & {\color{white} \colorbox[HTML]{323232}{dark0}} & \colorbox{white}{light1} & \colorbox[HTML]{eeeeec}{light0} & {\color{white} \colorbox[HTML]{353535}{dark1}} & {\color{white} \colorbox[HTML]{d25252}{a0}} & \colorbox{white}{light1} & \colorbox[HTML]{6c99bb}{b0} & {\color{white} \colorbox[HTML]{353535}{dark1}} & \colorbox[HTML]{c2e075}{a4} & \\
         es\-pre\-sso (dark) & \colorbox[HTML]{eeeeec}{light0} & {\color{white} \colorbox[HTML]{323232}{dark0}} & {\color{white} \colorbox[HTML]{353535}{dark1}} & \colorbox[HTML]{eeeeec}{light0} & {\color{white} \colorbox[HTML]{d25252}{a0}} & {\color{white} \colorbox[HTML]{323232}{dark0}} & \colorbox[HTML]{6c99bb}{b0} & {\color{white} \colorbox[HTML]{353535}{dark1}} & \colorbox[HTML]{c2e075}{a4} & \\
-        nord (light) & {\color{white} \colorbox[HTML]{2E3440}{nord0}} & \colorbox[HTML]{ECEFF4}{nord6} & \colorbox[HTML]{E5E9F0}{nord5} & {\color{white} \colorbox[HTML]{3B4252}{nord1}} & \colorbox[HTML]{81A1C1}{nord9} & \colorbox[HTML]{eceff3}{nord6} & \colorbox[HTML]{A3BE8C}{nord14} & \colorbox[HTML]{e5e9f0}{nord5} & \colorbox[HTML]{5E81AC}{nord10} & \\
-        nord (dark) & \colorbox[HTML]{ECEFF4}{nord6} & {\color{white} \colorbox[HTML]{2E3440}{nord0}} & {\color{white} \colorbox[HTML]{3B4252}{nord1}} & &  \colorbox[HTML]{81A1C1}{nord9} & \colorbox[HTML]{eceff3}{nord6} & \colorbox[HTML]{A3BE8C}{nord14} & \colorbox[HTML]{e5e9f0}{nord5} & \colorbox[HTML]{5E81AC}{nord10} & \\
+        nord (light) & {\color{white} \colorbox[HTML]{2E3440}{nord0}} & \colorbox[HTML]{ECEFF4}{nord6} & \colorbox[HTML]{E5E9F0}{nord5} & {\color{white} \colorbox[HTML]{3B4252}{nord1}} & \colorbox[HTML]{81A1C1}{nord9} & \colorbox[HTML]{eceff3}{nord6} & \colorbox[HTML]{A3BE8C}{nord14} & \colorbox[HTML]{e5e9f0}{nord5} & \colorbox[HTML]{B48EAD}{nord15} & \\
+        nord (dark) & \colorbox[HTML]{ECEFF4}{nord6} & {\color{white} \colorbox[HTML]{2E3440}{nord0}} & {\color{white} \colorbox[HTML]{3B4252}{nord1}} & &  \colorbox[HTML]{81A1C1}{nord9} & \colorbox[HTML]{eceff3}{nord6} & \colorbox[HTML]{A3BE8C}{nord14} & \colorbox[HTML]{e5e9f0}{nord5} & \colorbox[HTML]{B48EAD}{nord15} & \\
         so\-l\-ar\-iz\-ed (light) & {\color{white} \colorbox[HTML]{002b36}{base03}} & \colorbox[HTML]{fdf6e3}{base3} & \colorbox[HTML]{eee8d5}{base2} & {\color{white} \colorbox[HTML]{073642}{base02}} & \colorbox[HTML]{b58900}{yellow} & \colorbox[HTML]{fdf6e2}{base3} & \colorbox[HTML]{268bd2}{blue} & \colorbox[HTML]{eee8d5}{base2} & \colorbox[HTML]{dc322f}{red} & \\
         so\-l\-ar\-iz\-ed (dark) & \colorbox[HTML]{fdf6e3}{base3} & {\color{white} \colorbox[HTML]{002b36}{base03}} & {\color{white} \colorbox[HTML]{073642}{base02}} & \colorbox[HTML]{eee8d5}{base2} & \colorbox[HTML]{b58900}{yellow} & {\color{white} \colorbox[HTML]{002b3b}{base03}} & \colorbox[HTML]{268bd2}{blue} & {\color{white} \colorbox[HTML]{073642}{base02}} & \colorbox[HTML]{dc322f}{red} & \\
         to\-mor\-row (light) & {\color{white} \colorbox[HTML]{1d1f21}{dark0}} & \colorbox[HTML]{ffffff}{light3} & & & \colorbox[HTML]{cc6666}{a0} & & & & & \\
@@ -254,7 +254,117 @@ this strives to be relatively self-contained, so only packages required for pers
 
 \subsection{linguistics}
 \begin{description}[font=\ttfamily]
+  \item[start] provides a contents line with a list of flashcards. does not include examples.
   \item[tree] a document environment for syntax trees. takes one argument, the caption, and places body directly into a tree within a floating environment.
+\end{description}
+
+\section{known issues}
+\begin{description}
+  \item[bad flashcard handling] for reasons that are somewhat difficult to explain concisely, flashcards can behave very unpredictably.
+  \item[\texttt{color scheme} is broken] as \vref{tab:colorschemes} shows, some color schemes lack certain colors. this is for a variety of reasons, most of them bad, but it is relevant to mention that in most cases, there should be a back up of either white or black.
+\end{description}
+
+\section{possible additions/plans}
+\begin{description}
+  \item[return buttons on links] obviously this will be rather imperfect, but being able to return from a vocab card to where it was mentioned in the main document would be nice.
+  \item[improved example functionality] at present, the \mintinline{TeX}{example} environment for linguistics is minimal at best. ideally, this could be improved to function as a full float.
+  \item[better internal handling of flashcards] flashcards are a mess of spaghetti code right now which really limits their power. cleaning this up would make most things dealing with flashcards significantly more effective.
+  \item[key-value colors] exactly what it says on the tin.
+  \item[more flexible minted processing] avoiding errors from missing minted options, possibly (?) loading a back-up package if minted can't be run
+  \item[flashcard export] ideally in a CSV file\footnote{ideal for anki support}
+\end{description}
+
+\section{class information}
+\begin{description}
+  \item[xparse] loaded in very early on. could be loaded in earlier, but this provides support for future key-value work.
+  \item[class options] very similar to aesthetic, most are loaded in to create if statements in the general form \mintinline{tex}{\if@dark}, etc. the options \mintinline{tex}{partheadings}\footnote{for notes headings to be helpful, they generally need to be more specific} and \mintinline{TeX}{lowerhead}\footnote{automatically loaded} are explicitly ignored.
+  \item[minted] this is only loaded in the cse version, but the thematic handling is a series of nested if statements --- \vref{lst:minted}
+  \begin{listing}
+    \begin{minted}[breaklines]{TeX}
+\usemintedstyle{bw}
+\if@printable
+  \usemintedstyle{bw}
+\else
+  \if@ashes
+    \if@dark
+      \usemintedstyle{native}
+    \else
+      \usemintedstyle{colorful}
+    \fi
+  \fi
+
+  \if@espresso
+    \usemintedstyle{nord}
+  \fi
+
+  \if@nord
+    \usemintedstyle{nord}
+  \fi
+
+  \if@solarized
+    \if@dark
+      \usemintedstyle{solarized-dark}
+    \else
+      \usemintedstyle{solarized-light}
+    \fi
+  \fi
+
+  \if@tomorrow
+    \if@dark
+      \usemintedstyle{tomorrow-night}
+    \else
+      \usemintedstyle{tomorrow}
+    \fi
+  \fi
+\fi
+    \end{minted}
+    \caption{loading minted styles based on user choice}
+    \label{lst:minted}
+  \end{listing}
+  \item[colors] the code for the ashes scheme is shown in \vref{lst:ashes} to provide an example of what the color scheme setting is. the other colors mostly follow the same pattern.
+  \begin{listing}
+    \begin{minted}{tex}
+\definecolor{@dark}{HTML}{1c1e23}
+\definecolor{@light}{HTML}{f3f3f5}
+\definecolor{@mid}{HTML}{747a84}
+\definecolor{@a0}{HTML}{c7ac95}
+\definecolor{@a1}{HTML}{ac95c7}
+\definecolor{@a2}{HTML}{c795ac}
+\definecolor{@b0}{HTML}{95c7ac}
+\definecolor{@b1}{HTML}{acc795}
+\definecolor{@b2}{HTML}{95acc7}
+
+\definecolor{subtletextcolor}{named}{@mid}
+\definecolor{accentcolor}{named}{@a2}
+\definecolor{accenttextcolor}{named}{@light}
+\definecolor{secondaryaccentcolor}{named}{@b2}
+\definecolor{secondaryaccenttextcolor}{named}{@dark}
+\definecolor{tertiaryaccentcolor}{named}{@a0}
+\definecolor{color4}{named}{@b1}
+
+\if@dark
+  \if@printable
+    \definecolor{textcolor}{named}{@dark}
+  \else
+    \definecolor{textcolor}{named}{@light}
+    \definecolor{pagecolor}{named}{@dark}
+    \definecolor{backgroundcolor}{named}{@dark}
+  \fi
+\else
+  \definecolor{textcolor}{named}{@dark}
+  \definecolor{backgroundcolor}{named}{@light}
+
+  \if@printable
+  \else
+    \definecolor{pagecolor}{named}{@light}
+  \fi
+\fi
+    \end{minted}
+    \caption{ashes color scheme}
+    \label{lst:ashes}
+  \end{listing}
+
+  \item[other color choices] other color decisions are made based on the color names defined here (accent colors, etc.) which are available for use in the main document
 \end{description}
 
 \makeappendix
