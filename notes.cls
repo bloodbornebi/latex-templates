@@ -2,6 +2,33 @@
 \ProvidesClass{notes}
 
 \RequirePackage{xparse}
+\RequirePackage{xkeyval}
+
+% Key set up
+\newif\if@ashes
+\@ashesfalse
+\newif\if@espresso
+\@espressofalse
+\newif\if@nord
+\@nordfalse
+\newif\if@solarized
+\@solarizedfalse
+\newif\if@tomorrow
+\@tomorrowfalse
+
+\define@choicekey{notes.cls}{color}[\val\nr]{ashes,espresso,nord,solarized,tomorrow}{
+  \ifcase\nr\relax
+    \DeclareOption{ashes}{\@ashestrue}
+  \or
+    \DeclareOption{espresso}{\@espressotrue}
+  \or
+    \DeclareOption{nord}{\@nordtrue}
+  \or
+    \DeclareOption{solarized}{\@solarizedtrue}
+  \or
+    \DeclareOption{tomorrow}{\@tomorrowtrue}
+  \fi
+}
 
 % Options
 %% Options not used
@@ -18,26 +45,6 @@
 \@printablefalse
 \newcommand{\textsize}{14pt}
 \DeclareOption{printable}{\@printabletrue\renewcommand{\textsize}{10pt}}
-
-\newif\if@ashes
-\@ashesfalse
-\DeclareOption{ashes}{\@ashestrue}
-
-\newif\if@espresso
-\@espressofalse
-\DeclareOption{espresso}{\@espressotrue}
-
-\newif\if@nord
-\@nordfalse
-\DeclareOption{nord}{\@nordtrue}
-
-\newif\if@solarized
-\@solarizedfalse
-\DeclareOption{solarized}{\@solarizedtrue}
-
-\newif\if@tomorrow
-\@tomorrowfalse
-\DeclareOption{tomorrow}{\@tomorrowtrue}
 
 %% Subject options
 \newif\if@anth
