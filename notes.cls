@@ -538,6 +538,8 @@
 \if@ling
   \NewDocumentEnvironment { tree } { m +b } { \begin{figure} \centerfloat \begin{forest} #2 \end{forest} \caption{#1} \end{figure} } {}
   \newcommand{\start}[1][]{\startgen[\addcontentsline{toc}{chapter}{Flashcards}\listof{flashcard}{Flashcards} #1]}
-  \newenvironment{example}[1][]{\begin{tcolorbox}[generic=\captionof*{flashcard}{#1}]\begin{exe}}{\end{exe}\end{tcolorbox}}
-  \newenvironment{example*}[1][]{\begin{tcolorbox}[generic=\captionof*{flashcard}{#1},nofloat]\begin{exe}}{\end{exe}\end{tcolorbox}}
+
+  \newfloat{example}{tbp}{loe}
+  \newenvironment{example}[1][]{\begin{tcolorbox}[generic=\captionof*{example}{#1}]\begin{exe}}{\end{exe}\end{tcolorbox}}
+  \newenvironment{example*}[1][]{\begin{tcolorbox}[generic=\captionof*{example}{#1},nofloat]\begin{exe}}{\end{exe}\end{tcolorbox}}
 \fi
